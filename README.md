@@ -1,6 +1,6 @@
 # My OSX Setup
 
-[![Continuous integration](https://github.com/svo/my-osx-setup/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/svo/my-osx-setup/actions/workflows/main.yml)
+[![Test](https://github.com/scalettar/my-osx-setup/actions/workflows/main.yml/badge.svg)](https://github.com/scalettar/my-osx-setup/actions/workflows/main.yml)
 
 ## Testing
 
