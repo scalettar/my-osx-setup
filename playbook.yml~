@@ -16,19 +16,33 @@
       lineinfile: path=/etc/paths line='/usr/local/sbin' insertbefore='/usr/sbin'
       become: yes
 
-    - hostname: name=deadstock-mac
+    - hostname: name=svo-mac
       become: yes
 
   roles:
 
     - source-control
+    - docker
     - cli-tools
     - vim
     - python
     - system
+    - java
+    - gradle
+    - maven
+    - node
+    - clojure
+    - golang
+    - kotlin
+    - ruby
     - office
     - plantuml
+    - atom
+    - semgrep
+    - security
+    - internet
     - infrastructure-as-code
+    - media
 
   post_tasks:
 

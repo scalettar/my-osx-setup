@@ -1,6 +1,10 @@
 - name: Install Ansible
   homebrew: name=ansible
 
+- name: Install AWS CLI tools
+  pip: name=awscli extra_args="--ignore-installed six"
+  become: yes
+
 - name: Install Vagrant
   homebrew_cask: name=vagrant
 
@@ -18,6 +22,9 @@
 
 - name: Install Kuberenetes command line
   homebrew: name=kubernetes-cli
+
+- name: Install Act for testing local GitHub workflows
+  homebrew: name=act
 
 - name: Install vim plugins
   git: repo={{ item.repo }} dest=~/.vim/bundle/{{ item.dest }}
